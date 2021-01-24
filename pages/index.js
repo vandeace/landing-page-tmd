@@ -1,14 +1,15 @@
-import Nav from '../components/nav'
+import { useEffect, useState } from "react";
+import Hero from "../components/Hero";
+import Nav from "../components/nav";
 
 export default function IndexPage() {
   return (
     <div>
       <Nav />
-      <div className="py-20">
-        <h1 className="text-5xl text-center text-gray-700 dark:text-gray-100">
-          Next.js + Tailwind CSS 2.0
-        </h1>
+      <div className="md:p-8 py-8 p-3">
+        <Hero />
+        <Hero />
       </div>
     </div>
-  )
+  );
 }
